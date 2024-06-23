@@ -13,6 +13,7 @@ app.use('/static', express.static('public', {
         console.log('ext', ext);
         console.log('filename', filename);
         console.log('path', path);
+        console.log('stat', stat);
 
         switch (ext) {
             case 'pdf':
