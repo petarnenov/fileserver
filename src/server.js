@@ -10,11 +10,6 @@ app.use('/static', express.static('public', {
         const filename = path.split('/').pop();
         const ext = filename.split('.').pop();
 
-        console.log('ext', ext);
-        console.log('filename', filename);
-        console.log('path', path);
-        console.log('stat', stat);
-
         switch (ext) {
             case 'pdf':
                 res.set('Content-Type', 'application/pdf');
