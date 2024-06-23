@@ -9,6 +9,10 @@ app.use('/static', express.static('public', {
     setHeaders: (res, path, stat) => {
         const filename = path.split('/').pop();
         const ext = filename.split('.').pop();
+
+        console.log('ext', ext);
+        console.log('filename', filename);
+
         switch (ext) {
             case 'pdf':
                 res.set('Content-Type', 'application/pdf');
