@@ -1,0 +1,6 @@
+services:
+  fileserver:
+    image: petarnenov/fileserver
+    build: .
+    ports:
+      - "3000:3000"
